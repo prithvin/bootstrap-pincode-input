@@ -99,7 +99,8 @@
 						$(this._container).addClass("touch");
 						
 						// For touch devices we build a html table directly under the pincode textbox. The textbox will become transparent
-						// This table is used for styling only, it will display how many 'digits' the user should fill in.
+						// This table is used for styling only, it will display how many 'digits' the 
+						should fill in.
 						// With CSS letter-spacing we try to put every digit visually insize each table cell.
 						
 						var wrapper = $('<div />').addClass('touchwrapper touch'+this.settings.inputs).appendTo(this._container);
@@ -181,9 +182,7 @@
 				},
 				_isTouchDevice:function(){
 					// I know, sniffing is a really bad idea, but it works 99% of the times
-					if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-					 	return true;
-					}
+					return false;
 				},
 				_addEventsToInput:function(input){
 
