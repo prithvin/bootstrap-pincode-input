@@ -99,8 +99,7 @@
 						$(this._container).addClass("touch");
 						
 						// For touch devices we build a html table directly under the pincode textbox. The textbox will become transparent
-						// This table is used for styling only, it will display how many 'digits' the 
-						should fill in.
+						// This table is used for styling only, it will display how many 'digits' the should fill in.
 						// With CSS letter-spacing we try to put every digit visually insize each table cell.
 						
 						var wrapper = $('<div />').addClass('touchwrapper touch'+this.settings.inputs).appendTo(this._container);
